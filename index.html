@@ -20,7 +20,7 @@
                 <nav class="header-navigation">
                     <a href="./index.html" class="logo-link">Web<span class="logo-text">Studio</span></a>
                     <ul class="header-list list">
-                        <li class="header-item"><a href="./index.html" class="header-link link">Студия</a></li>
+                        <li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
                         <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
                         <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
                     </ul>
@@ -47,7 +47,25 @@
             <section class="hero">
                 <div class="hero-container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="button" type="button">Заказать услугу</button>
+                    <button class="button" type="button" data-modal-open>Заказать услугу</button>
+                        <div data-modal class="backdrop is-hidden">
+                            <div class="modal">
+                                <div class="btn-modal-container">
+                                    <button data-modal-close class="btn-modal">
+                                        <svg class="btn-modal-close">
+                                            <use href="./images/icons.svg#icon-close-black"></use>
+                                        </svg> 
+                                    </button>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Porro illo maiores
+                                    necessitatibus, officia officiis omnis soluta
+                                    enim neque harum similique atque provident nemo
+                                    eum vero aspernatur veniam cum ipsam. Sequi?
+                                </p>
+                            </div>
+                        </div>
                 </div>
             </section>
             <section class="characteristic">
@@ -348,5 +366,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
