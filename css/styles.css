@@ -261,6 +261,27 @@ body {
 }
 .business-item {
     margin-right: 30px;
+    position: relative;
+    display: flex;
+}
+.business-item-subtext {
+    margin-top: 224px;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+.business-item-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--header-text-color1);
 }
 /*-------------------OUR TEAM------------*/
 .team-section {
